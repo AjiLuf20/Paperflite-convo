@@ -44,7 +44,7 @@ const ConversationsTrack = () => {
   return (
     <div
       className={twMerge(
-        "flex-col p-[8px_12px_12px] sm:p-[0px_24px] max-w-[400px] h-full overflow-auto w-full order-2 border-r-0 sm:border-r",
+        "flex-col p-[8px_12px_12px] sm:p-[0px_24px] mx-auto max-w-[400px] h-full overflow-auto w-full order-2 border-r-0 sm:border-r",
         !isBackBtnShown ? "flex" : "hidden sm:flex"
       )}
     >

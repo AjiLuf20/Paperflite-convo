@@ -14,7 +14,7 @@ const Nav = () => {
   return (
     <nav className="py-4 sm:py-10 px-2 border-t sm:border-r order-3 sm:order-1 min-w-[60px]">
       {isMobile ? (
-        <div className="flex h-full justify-between px-5 items-center">
+        <div className="flex h-full justify-between px-5 items-center max-w-[400px] mx-auto">
           <Nav1Svg />
           <Nav2Svg />
           <Nav3Svg />

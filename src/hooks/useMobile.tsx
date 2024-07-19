@@ -6,7 +6,7 @@ type UseIsMobileReturnType = boolean;
 // Custom hook to check if the current device is mobile based on window width
 const useIsMobile = (): UseIsMobileReturnType => {
   // Define the mobile breakpoint
-  const mobileBreakpoint = 768;
+  const mobileBreakpoint = 900;
 
   // State to store whether the device is mobile or not
   const [isMobile, setIsMobile] = useState(

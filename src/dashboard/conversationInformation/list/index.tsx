@@ -43,8 +43,8 @@ const RecipientsList = () => {
                     height={40}
                   />
                   <p className="text-sm font-medium">{member.name}</p>
-                  <span className="hidden sm:block text-[#ededed]">|</span>
-                  <span className="hidden sm:block text-xs text-grayColor">{`Last viewed on ${member.lastViewed}`}</span>
+                  <span className="hidden lg:block text-[#ededed]">|</span>
+                  <span className="hidden lg:block text-xs text-grayColor">{`Last viewed on ${member.lastViewed}`}</span>
                 </div>
                 <div className="flex gap-4 sm:gap-6 items-center">
                   <span className="text-xs text-grayColor">`85m</span>
