@@ -1,0 +1,108 @@
+/* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  height: 100%;
+}
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  --primary-color: black;
+  --secondary-color: #e51058;
+  --light-gray: #a9a9a9;
+  --gray-color: #717274;
+  --bg-color: white;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  height: 100%;
+  color: var(--primary-color);
+  background-color: var(--bg-color);
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 14px;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  position: relative;
+  line-height: 1.5;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  /* font-family: "Samsung Sharp Sans", sans-serif; */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+input:focus,
+button:focus,
+a:focus,
+textarea:focus {
+  outline: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+}
+
+.activity-box svg {
+  margin-top: 4px;
+}
+
+.activity-box:hover * {
+  @apply text-secondaryColor;
+}
+.activity-box:hover svg path {
+  @apply fill-secondaryColor;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #1fa2ff 0%,
+    #12d8fa 51%,
+    #1fa2ff 100%
+  );
+
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+}
