@@ -6,7 +6,7 @@ const AuthLayout = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <div className="w-full h-screen flex flex-col items-center justify-center overflow-hidden">
-      <div className="w-full px-8 h-max sm:max-w-[360px] flex flex-col relative overflow-hidden bg-background">
+      <div className="w-full px-8 h-max max-w-[360px] flex flex-col relative overflow-hidden bg-background">
         <div className={"text-left relative w-full h-full bg-background"}>
           {children}
         </div>

@@ -4,15 +4,17 @@ import { Input } from "./index";
 const PasswordInput = React.forwardRef<
   HTMLInputElement,
   {
+    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
     showPasssword: boolean;
     placeholder?: string;
     eyeHandler: () => void;
   }
->(({ showPasssword, placeholder, eyeHandler }, ref) => {
+>(({ onChange, showPasssword, placeholder, eyeHandler }, ref) => {
   return (
     <div className="relative">
       <Input
         ref={ref}
+        onChange={onChange}
         type={showPasssword ? "text" : "password"}
         placeholder={placeholder || "Enter password"}
         className="placeholder:text-gray-300 pr-8"
