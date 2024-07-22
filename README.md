@@ -1,9 +1,5 @@
 # Paperflite-convo - React + TS + Vite + Reduxjs/toolkit
 
-## Note
-
-On the authentication page, I have not yet integrated the functionality; it currently displays only the CSS view. The login page includes validation features, and I have implemented several working functionalities in the dashboard.
-
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
@@ -28,6 +24,10 @@ npm install
 npm run dev
 
 # Route paths are
-/, /:id, /auth/login, /auth/signup
+/, /:id, /auth/login, /auth/signup, /logout
 
 ```
+
+## Authentication journey
+
+You need to sign up first. Then, you will automatically be taken to the login page. During this process, you will be asked for a verification code that has been sent to your email. Once you log in, you can enter the dashboard page.
