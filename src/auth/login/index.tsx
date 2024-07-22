@@ -111,8 +111,17 @@ const LoginPage = () => {
               type: LoginEnum.TOGGLE_SHOW_CONFIRM_CODE,
               payload: true,
             });
+            user.resendConfirmationCode(() => {
+              if (err) {
+                dispatch({
+                  type: LoginEnum.ERROR_MESSAGE,
+                  payload: err.message || JSON.stringify(err),
+                });
+                return;
+              }
+            });
+            return;
           }
-
           dispatch({
             type: LoginEnum.ERROR_MESSAGE,
             payload: err.message,
